@@ -1,0 +1,318 @@
+index.html
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <!--=============== REMIX ICONS ===============-->
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="">
+        <title>Responsive car website - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            
+        </header>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                
+            </section>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                
+            </section>
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+                
+            </section>
+            <!--==================== FEATURES ====================-->
+            <section class="features section">
+                
+            </section>
+            <!--==================== FEATURED ====================-->
+            <section class="featured section" id="featured">
+                
+            </section>
+            <!--==================== OFFER ====================-->
+            <section class="offer section">
+                
+            </section>
+            <!--==================== LOGOS ====================-->
+            <section class="logos section">
+                
+            </section>
+        </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            
+        </footer>
+        <!--========== SCROLL UP ==========-->
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src=""></script>
+        <!--=============== SWIPER JS ===============-->
+        <script src=""></script>
+        <!--=============== MIXITUP JS ===============-->
+        <script src=""></script>
+        <!--=============== MAIN JS ===============-->
+        <script src=""></script>
+    </body>
+</html>
+
+
+car details.txt
+
+========== HOME ==========
+.home__title
+Choose The Best Car
+.home__subtitle
+Porsche Mission E
+.home__elec
+Electric car
+.home__car-number | .home__car-name
+24°
+TEMPERATURE
+873
+MILEAGE
+94%
+BATTERY
+========== ABOUT ==========
+.about__card-title
+2.500+
+.about__card-description
+Supercharges placed along popular routes
+.section__title
+Machines With <br> Future Technology
+.about__description
+See the future with high-performance electric cars produced by 
+renowned brands. They feature futuristic builds and designs with 
+new and innovative platforms that last a long time.
+========== POPULAR ==========	
+.section__title
+Choose Your Electric Car <br> Of The Porsche Brand
+.popular__title | .popular__subtitle
+Porsche
+Turbo S
+Porsche
+Taycan
+Porsche
+Turbo S Cross
+Porsche
+Boxster 718
+Porsche
+Cayman
+.popular__data-group
+3.7 Sec
+356 Km/h
+Electric
+.popular__price
+$175,900
+$114,900
+$150,900
+$125,900
+$128,900
+========== FEATURES ==========
+.section__title
+More Features
+.features__card-1
+800v
+Turbo <br> Chargin</p>
+.features__card-2
+350
+Km <br> Range
+.features__card-3
+480
+Km <br> Travel
+========== FEATURED ==========
+.section__title
+Featured Luxury Cars
+.featured__title | .featured__subtitle | .featured__price
+Tesla
+Model X
+$98,900
+Tesla
+Model 3
+$45,900
+Audi
+E-tron
+$175,900
+Porsche
+Boxster 987
+$126,900
+Porsche
+Panamera
+$126,900
+========== OFFER ==========
+.section__title
+Do You Want To Receive <br> Special Offers?
+.offer__description
+Be the first to receive all the information about our 
+products and new cars by email by subscribing to our 
+mailing list.
+.button
+Subscribe Now
+========== FOOTER ==========
+.footer__title
+Elecar
+.footer__description
+We offer the best electric cars of <br> 
+the most recognized brands in <br> 
+the world.
+.footer__title | .footer__link
+Company
+About
+Cars
+History
+Shop
+Information
+Request a quote
+Find a dealer
+Contact us
+Services
+Follow us
+.footer__social-link
+https://www.facebook.com/
+https://www.instagram.com/
+https://twitter.com/
+.footer__copy
+&#169; Bedimcode. All rigths reserved
+
+
+asserts.css
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(219, 69%, 56%);
+  --first-color-alt: hsl(219, 69%, 52%);
+  --title-color: hsl(219, 8%, 95%);
+  --text-color: hsl(219, 8%, 75%);
+  --text-color-light: hsl(219, 4%, 55%);
+  --white-color: #fff;
+  --body-color: hsl(219, 4%, 4%);
+  --container-color: hsl(219, 4%, 7%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Exo', sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+@media screen and (min-width: 968px) {
+  :root {
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.section {
+  padding: 4.5rem 0 2rem;
+}
+.section__title {
+  font-size: var(--h2-font-size);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.main {
+  overflow: hidden;
+}
+/*=============== HEADER & NAV ===============*/
+/* Show menu */
+/* Change background header */
+/* Active link */
+/*=============== HOME ===============*/
+/* Button animate */
+/*=============== BUTTON ===============*/
+/*=============== ABOUT ===============*/
+/*=============== POPULAR ===============*/
+/* Swiper class */
+/*=============== FEATURES ===============*/
+/*=============== FEATURED ===============*/
+/* Active link featured */
+/*=============== OFFER ===============*/
+/*=============== LOGOS ===============*/
+/*=============== FOOTER ===============*/
+/*=============== SCROLL BAR ===============*/
+/*=============== SCROLL UP ===============*/
+/* Show Scroll Up*/
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+/* For medium devices */
+/* For large devices */
+
+assets/js/main.js
+/*=============== SHOW MENU ===============*/
+/*=============== REMOVE MENU MOBILE ===============*/
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+/*=============== POPULAR SWIPER ===============*/
+/*=============== MIXITUP FILTER FEATURED ===============*/
+/* Link active featured */ 
+/*=============== SHOW SCROLL UP ===============*/ 
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+
+assets/js/mixitup.min.js
+assets/js/scrollreveal.min.js
+assets/js/swiper-bundle.min.js
